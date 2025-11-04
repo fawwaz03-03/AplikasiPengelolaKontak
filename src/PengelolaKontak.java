@@ -231,11 +231,12 @@ public class PengelolaKontak extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void cmbKategoriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbKategoriActionPerformed
-        // TODO add your handling code here:
+            String kategori = cmbKategori.getSelectedItem().toString().toLowerCase();
+    filterTable(kategori);
     }//GEN-LAST:event_cmbKategoriActionPerformed
 
     private void txtNamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNamaActionPerformed
-        // TODO add your handling code here:
+        txtNomorTelepon.requestFocus();
     }//GEN-LAST:event_txtNamaActionPerformed
 
     private void tblKontakMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblKontakMouseClicked
